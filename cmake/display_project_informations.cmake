@@ -1,0 +1,11 @@
+
+function(display_project_informations)
+    message(STATUS "")
+    message(NOTICE "> ---- PROJECT INFORMATIONS ----")
+    message(STATUS "> Project name ----- ${PROJECT_NAME}")
+    message(STATUS "> Version ---------- ${CMAKE_PROJECT_VERSION}")
+    message(STATUS "> Source dir ------- ${PROJECT_SOURCE_DIR}")
+    message(STATUS "> Build dir -------- ${PROJECT_BINARY_DIR}")
+    message(NOTICE "> ------------------------------")
+    message(STATUS "")
+endfunction()
