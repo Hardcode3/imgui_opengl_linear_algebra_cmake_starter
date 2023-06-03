@@ -140,13 +140,16 @@ void AppBase::setup_fonts()
 
 bool AppBase::add_font(const char* relative_font_path)
 {
-    std::string font_path_str = Utils::Path::convert_to_c_path(RayTracing_FONTS_DIR);
+    std::string font_path_str = Utils::Path::convert_to_c_path(PROJECT_FONTS_DIR);
     const char* font_path = const_cast<char*>(font_path_str.c_str());
     
-    if ((font_path_str.size() + strlen(relative_font_path) + 1 > 100))
+    if ((font_path_str.size() + strlen(relative_font_path) > 200))
+    {
+        std::cout << "The path to the porject is too long for the path buffer, consider mooving your project as close to the root as possible." << std::endl;
         return false;
+    }
 
-    char font[100];
+    char font[200];
     Utils::Str::concatenate_cstr(font_path, relative_font_path, font);
 
     if (Utils::Path::file_exists(font))

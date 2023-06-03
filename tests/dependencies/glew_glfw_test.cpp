@@ -1,7 +1,10 @@
 #include <iostream>
 
 // GLEW
+#ifndef GLEW_STATIC
 #define GLEW_STATIC
+#endif
+
 #include <GL/glew.h>
 
 // GLFW

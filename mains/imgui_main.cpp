@@ -2,8 +2,9 @@
 
 int main(int, char**)
 {
-    App* app = new App(1920, 1080, (char*)"RayTracer");
-    app->set_light_style();
+    std::cout << "Project source directory: " << PROJECT_SOURCE_DIR << std::endl;
+    App* app = new App(1300, 800, (char*)"PROJECT");
+    app->set_dark_style();
     app->loop();
     delete app;
     return 0;

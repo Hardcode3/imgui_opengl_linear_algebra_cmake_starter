@@ -9,9 +9,9 @@
 #include <cstring>
 #include <stdio.h>
 #include <assert.h>
-#include "imgui.h"
-#include "imgui_impl_glfw.h"
-#include "imgui_impl_opengl3.h"
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 #include <implot.h>
 #include <imnodes.h>
 #include <stdio.h>
@@ -23,7 +23,7 @@
 #include <GLFW/glfw3.h> // Will drag system OpenGL headers
 
 // cmake configuration file header
-#include <RayTracingConfigure.h>
+#include <PROJECTConfigure.h>
 
 // utils headers
 #include <path.h>

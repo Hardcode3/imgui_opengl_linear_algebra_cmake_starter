@@ -2,9 +2,7 @@
 #define APP_H
 
 #include <stdio.h>
-#include "imgui_internal.h"
 #include <app_base.h>
-#include <glgraph.h>
 #include <node_editor.h>
 #define _USE_MATH_DEFINES
 #include <math.h>

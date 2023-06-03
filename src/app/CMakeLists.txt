@@ -4,7 +4,7 @@ set(target_name app)
 
 add_library(${target_name} STATIC "")
 
-target_link_libraries(${target_name} PRIVATE glgraph externals fstreamlib utils)
+target_link_libraries(${target_name} PRIVATE libglew_static libglew_shared glfw imgui fstreamlib utils)
 
 target_sources(${target_name}
     PRIVATE
@@ -44,11 +44,10 @@ target_include_directories (${target_name}
         "${PROJECT_SOURCE_DIR}/include/app/imgui_utils"
         "${PROJECT_SOURCE_DIR}/include/app/node_system"
         "${PROJECT_SOURCE_DIR}/include/app/file_browser"
-        "${PROJECT_SOURCE_DIR}/include/glgraph"
         "${PROJECT_SOURCE_DIR}/include/fstreamlib"
         "${PROJECT_SOURCE_DIR}/include/utils"
         "${PROJECT_SOURCE_DIR}/assets"
         "${PROJECT_BINARY_DIR}"
 )
 
-set_property(TARGET ${target_name} PROPERTY FOLDER "Sources/ui")
+set_property(TARGET ${target_name} PROPERTY FOLDER "Sources/Gui")
