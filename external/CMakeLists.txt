@@ -75,16 +75,26 @@ set(EIGEN_DOC_USE_MATHJAX OFF)
 add_subdirectory(eigen)
 set_property(TARGET eigen PROPERTY FOLDER "External/Eigen3")
 
-
-# Imgui configuration
-if ((NOT EXISTS imgui) OR (NOT IS_DIRECTORY imgui))
-	message(STATUS "> Cloning imgui from remote...")
+# Imnodes configuration
+if ((NOT EXISTS imnodes) OR (NOT IS_DIRECTORY imnodes))
+	message(STATUS "> Cloning imnodes from remote...")
 	execute_process(
-		COMMAND git submodule update --init imgui
+		COMMAND git submodule update --init imnodes
 		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 	)
 else()
-	message(STATUS "> Found Imgui submodule folder")
+	message(STATUS "> Found imnodes submodule folder")
+endif()
+
+# Implot configuration
+if ((NOT EXISTS implot) OR (NOT IS_DIRECTORY implot))
+	message(STATUS "> Cloning implot from remote...")
+	execute_process(
+		COMMAND git submodule update --init implot
+		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+	)
+else()
+	message(STATUS "> Found implot submodule folder")
 endif()
 
 set(target_name imgui)
