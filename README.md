@@ -4,6 +4,7 @@
 ![os support](https://img.shields.io/static/v1?label=Supports&message=Windows|Linux|MacOS&color=blue)
 ![repo size](https://img.shields.io/github/repo-size/Hardcode3/imgui_opengl_linear_algebra_cmake_starter)
 
+
 A template project using [Imgui](external/imgui) as graphical user interface ([glfw](external/glfw), [glm](external/glm), [glew](external/glew) and [OpenGL](https://www.opengl.org/)), and [Eigen3](external/eigen) as linear algebra library.
 For more details about the Apach 2.0 licence, visit [tldrlegal.com](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)).
 For more details about the MIT licence, visit [tldrlegal.com](https://tldrlegal.com/license/mit-license)
