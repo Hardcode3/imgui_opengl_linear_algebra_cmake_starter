@@ -42,12 +42,12 @@ This repository contains submodules meaning that a recursive cloning can be done
 To clone this repository, make sure you have git installed and clone the project into the chosen folder using
 
 ```bash
-git clone --recursive https://github.com/Hardcode3/Imgui_with_eigen_cmake_template.git
+git clone --recursive https://github.com/Hardcode3/imgui_opengl_linear_algebra_cmake_starter
 ```
 
 You can also clone the project using
 ```bash
-git clone https://github.com/Hardcode3/Imgui_with_eigen_cmake_template.git
+git clone https://github.com/Hardcode3/imgui_opengl_linear_algebra_cmake_starter
 ```
 In this case, dependencies will be cloned by cmake during the configuration stage.
 
