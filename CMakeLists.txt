@@ -21,13 +21,6 @@ option(PROJECT_WITH_EXECUTABLES "Compile main executables" ON)
 option(PROJECT_WITH_TESTS "Compile tests" ON)
 option(PROJECT_BUILD_DOC "Build documentation" ON)
 
-# external dependencies
-option(PROJECT_CLONE_GLEW "Initialize glew from remote repository as git submodule" ON)
-option(PROJECT_CLONE_GLFW "Initialize glfw from remote repository as git submodule" ON)
-option(PROJECT_CLONE_GLM "Initialize glm from remote repository as git submodule" ON)
-option(PROJECT_CLONE_EIGEN "Initialize Eigen3 from remote repository as git submodule" ON)
-option(PROJECT_CLONE_IMGUI "Initialize imgui from remote repository as git submodule" ON)
-
 display_system_informations()
 display_project_informations()
 
